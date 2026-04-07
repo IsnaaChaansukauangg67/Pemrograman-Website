@@ -1,0 +1,210 @@
+
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Segoe UI, sans-serif;
+         }
+
+        body {
+            background: linear-gradient(135deg,#3410d4, #140653);
+            padding: 40px;
+        }
+
+        /*CONTAINER */
+
+        .cv-container {
+            max-width: 950px;
+            margin: auto ;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            overflow: hidden; 
+        }
+
+        /*HEADER*/
+
+        .header {
+            background: #2d6cdf;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 25px 30px;
+            gap: 20px;
+            opacity: 0;
+            animation: fadeIn 1.5s ease forwards;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px);}
+            to {opacity: 1; transform: translateY(0);}
+        }
+
+        .profil-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .name {
+            font-size: 26px;
+            font-weight: bold;
+        }
+
+        .job {
+            font-size: 15px;
+            opacity: 0.9;
+        }
+
+         .social-icons {
+             margin-top: 8px;
+             display: flex;
+             gap: 12px;
+        }
+
+        .social-icons a{
+            color:#fff;
+            font-size: 30px;
+            transition: 0.3s;
+        }
+        
+        .social-icons a:hover {
+            color: #25D366; /* WhatsApp hijau saat hover */
+        }
+        .social-icons a:nth-child(2):hover {
+            color: #E1306C; /* Instagram pink saat hover */
+        }
+        .social-icons a:nth-child(3):hover {
+            color:#0756ea; /* Facebook biru saat hover */
+        }       
+
+    
+        /*MAIN*/
+
+        .main {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+        }
+
+        /*LEFT*/
+
+        .left {
+            background: #f5f7ff;
+            padding: 25px;
+        }
+
+        .section {
+            margin-bottom: 25px;
+        }
+
+        .section h2 {
+            font-size: 18px;
+            color: #2d6cdf;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 4px;
+
+        }
+
+        .info {
+            font-size: 14px;
+            margin-bottom: 10px;
+
+        }
+
+        /*SKILL*/
+
+        .skill {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .bar {
+            background: #ddd;
+            height: 8px;
+            border-radius: 20px;
+            margin-top: 4px;
+        }
+
+        .fill {
+            background: #2d6cdf;
+            height: 8px;
+            border-radius: 20px;
+            width:0; /*mulai dr kosong */
+        }
+       
+
+        /*BUTTON*/
+
+        .github-btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 9px 9px;
+            background: #24292e;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 14px;
+            transition: 0.3s;
+
+        }
+     
+        .github-btn:hover{
+            background: rgb(91, 126, 214);
+            box-shadow: 0 0 10px #243e74; /* efek glow biru */
+            transform:scale(1.05); /* sedikit besar */
+        }
+
+        .linkedin-btn {
+           display: inline-block;
+            margin-top: 10px;
+            padding: 9px 9px;
+            background: #24292e;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 14px;
+            transition: 0.3s; 
+        }
+
+        .linkedin-btn:hover{
+            background: rgb(91, 126, 214);
+            box-shadow: 0 0 10px #243e74; /* efek glow biru */
+            transform:scale(1.05); /* sedikit besar */
+        }
+
+        /*RIGHT*/
+
+        .right {
+            padding: 30px;
+
+        }
+
+        .right p {
+            line-height: 1.6;
+            font-size: 14px;
+            margin-bottom: 15px;
+ 
+        }
+
+        ul {
+            padding-left: 20px;
+            line-height: 1.6;
+            font-size: 14px;
+
+        }
+
+        /*FOOTER*/
+
+        .footer {
+            text-align: center;
+            padding: 12px;
+            background: #f1f1f1;
+            font-size: 13px;
+
+        }
+
+
+    
