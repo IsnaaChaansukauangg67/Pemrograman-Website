@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemerintah Desa</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+
+    <!-- TOPBAR -->
+    <div class="topbar">
+        <div class="container">
+            <p> Selamat Datang ! di Website Pemerintah </p>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container header-container">
+
+            <div class="logo">
+                <img src="../foto/pemkab.jpeg" alt="pemkab">
+                <div>
+                    <h1>PEMERINTAH DESA WONODADI</h1>
+                    <span>Portal Resmi Informasi Desa</span>
+                </div>
+            </div>
+ <!-- HAMBURGER -->
+        <div class="hamburger" id="hamburger">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="profil.html">Profil</a></li>
+                    <li><a href="berita.html">Berita</a></li>
+                   <li><a href="">Narahubung</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="overlay"></div>
+
+        <div class="hero-content">
+            <h2>Melayani Dengan Cepat, Transparan dan Profesional</h2>
+            <p>
+                Portal informasi resmi pemerintah berisi media informasi dan pelayanan masyarakat.
+     
+            </p>
+        </div>
+    </section>
+    <!-- BERITA -->
+    <section class="news">
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Narahubung</h2>
+                <p>Memberikan pelayanan terbaik kami</p>
+            </div>
+
+            <div class="news-grid">
+
+                <div class="card">
+<div class="card"></div>
+<main class="container">
+<section class="content">
+  <br><h2 class="section-title">Layanan Administrasi Surat</h2>
+
+  <div class="profile-box">
+
+    <label>Nama Lengkap</label></br>
+    <input type="text" id="nama" class="form-input">
+    
+    <br>
+    <label>NIK</label></br>
+    <input type="text" id="nik" class="form-input">
+
+    <br>
+    <label>Jenis Surat</label><br>
+    <select id="jenis" class="form-input">
+      <option>Surat Keterangan Domisili</option>
+      <option>Surat Keterangan Usaha</option>
+      <option>Surat Pengantar SKCK</option>
+      <option>Surat Keterangan Tidak Mampu</option>
+    </select></br>
+    
+    <br>
+    <label>Keperluan</label></br>
+    <textarea id="keluhan" class="form-input"></textarea>
+    </br>
+
+    <!-- TOMBOL -->
+     <br>
+    <button type="button"
+    class="social-icons"
+    onclick="kirimWA()">
+    <i class="fa-brands fa-whatsapp"></i>Kirim ke WhatsApp</button>
+   
+  </div>
+</main>
+</br>
+</section>
+<!-- JAVASCRIPT -->
+<script>
+function kirimWA() {
+
+  const nomor = "6285731576570"; // GANTI NOMOR KAMU
+
+  const nama = document.getElementById("nama").value;
+  const nik = document.getElementById("nik").value;
+  const jenis = document.getElementById("jenis").value;
+  const keluhan = document.getElementById("keluhan").value;
+
+  if (nama === "" || nik === "" || keluhan === "") {
+    alert("Harap isi semua data!");
+    return;
+  }
+
+  const pesan =
+`Halo Admin Desa Wonodadi
+
+Saya ingin mengurus Administrasi Surat
+
+Nama: ${nama}
+NIK: ${nik}
+Jenis Surat: ${jenis}
+Keperluan: ${keluhan}`;
+
+  window.open(`https://wa.me/${nomor}?text=${encodeURIComponent(pesan)}`, "_blank");
+}
+</script>
+
+
+
+
+
+
+   <!-- FOOTER -->
+    <footer>
+
+        <div class="container footer-grid">
+
+            <div>
+                <h3>Pemerintah Desa Wonodadi</h3>
+                <p>
+                    Desa Wonodadi merupakan desa yang memiliki potensi di bidang
+            pertanian, UMKM, dan pariwisata lokal. <br>
+                    Wonodadi, Blitar
+                </p>
+            </div>
+
+            <div>
+                <h3>Kontak</h3>
+                <p>Email: info@pemdes.go.id</p>
+                <p>Telp: (0361) 123456</p>
+            </div>
+            <section class="social-media"><div>
+                <h3>Media Sosial</h3>
+               <div class="social-icons">
+                    <a href="https://www.facebook.com/BPDwonodadiTanjungsari" target="_blank" class="social-item"><i class="fa-brands fa-facebook"></i><span>Facebook</span></a>
+                    <a href="https://www.instagram.com/pemdes.wonodadi/" target="_blank" class="social-item"><i class="fa-brands fa-instagram"></i><span>Instagram</span></a>
+                    <a href="https://desawonodadi@gmail.com" target="_blank" class="social-item"><i class="fa-solid fa-envelope"></i><span>E-mail</span></a>
+                    <a href="https://www.youtube.com/@mediawonodadi" target="_blank" class="social-item"><i class="fa-brands fa-youtube"></i><span>Youtube</span></a>
+    
+            </div>
+</section>
+            
+        </div>
+
+        <div class="copyright">
+            © 2026 Pemerintah Desa - All Rights Reserved
+            <p>Powered by <a href="https://www.instagram.com/litwith.chaan?igsh=MTFtcGF3N3ZjeTM5NA==" target="_blank"></a></p>
+        </div>
+
+    </footer>
+
+</body>
+</html>  

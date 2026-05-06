@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Membuat Navbar Responsive Dengan HTML dan CSS</title>
+	<link rel="stylesheet" href="body.css">
+</head>
+<body>
+ 
+<nav class="navbar">
+	<div class="container">
+ 
+		<a href="https://www.malasngoding.com" class="logo">Malas Ngoding</a>
+		
+		<ul class="menu">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Tentang</a></li>
+			<li><a href="#">Produk</a></li>
+			<li><a href="#">Layanan</a></li>
+			<li><a href="#">Kontak Kami</a></li>
+		</ul>
+ 
+ 
+		<div class="tombol">
+			&#9776;
+		</div>
+ 
+	</div>
+</nav>
+ 
+	<div>
+		<center>
+			<h2>Panduan Membuat Navbar Responsive dari <a href="https://www.malasngoding.com/membuat-navbar-responsive-html-css">www.malasngoding.com</a></h2>
+		</center>
+	</div>
+ 
+	<script type="text/javascript">
+		// deklarasi tombol dan menu
+		const tombol = document.querySelector('.tombol');
+		const menu = document.querySelector('.menu');
+ 
+		// membuat event click
+		// pada saat tombol di click, tambahkan class aktif pada class menu
+		// saat diklik lagi, maka class aktif dihilangkan dari class menu (toggle)
+		tombol.addEventListener('click', () => {
+			menu.classList.toggle('aktif');
+		});
+	</script>
+ 
+</body>
+</html>
